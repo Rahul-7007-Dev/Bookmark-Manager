@@ -1,0 +1,101 @@
+.container {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.bookmark-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.bookmark-form input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.bookmark-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bookmark-item h3 {
+  margin: 0 0 8px;
+}
+
+.bookmark-item a {
+  color: #2563eb;
+  overflow-wrap: anywhere;
+}
+
+.delete-button {
+  background: #dc2626;
+  flex-shrink: 0;
+}
+
+.error {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .bookmark-item {
+    align-items: flex-start;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.edit-button {
+  background: #059669;
+}
+
+.cancel-button {
+  background: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-wrap: wrap;
+  }
+}
